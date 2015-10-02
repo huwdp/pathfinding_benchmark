@@ -36,9 +36,6 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionAll, SIGNAL(triggered()), this, SLOT(RunAll()));
     connect(ui->actionAbout, SIGNAL(triggered()), this, SLOT(About()));
     connect(ui->actionClear, SIGNAL(triggered()), this, SLOT(Clear()));
-    //
-    //connect(ui->actionIDA, SIGNAL(triggered()), this, SLOT(RunIDAStar()));
-    connect(ui->actionRBFS, SIGNAL(triggered()),this,SLOT(RunRBFS()));
 }
 
 MainWindow::~MainWindow()
